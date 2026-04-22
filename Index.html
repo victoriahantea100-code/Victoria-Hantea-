@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghid de Îngrijire și Proceduri Cosmetice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .procedure-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .procedure-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-number {
+            background: linear-gradient(135deg, #f472b6 0%, #fb7185 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white border-b sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-rose-600 flex items-center gap-2">
+                <i class="fas fa-sparkles"></i> EstetiGuide
+            </h1>
+            <nav class="hidden md:flex gap-6 text-sm font-medium">
+                <a href="#proceduri" class="hover:text-rose-500 transition">Proceduri</a>
+                <a href="#sfaturi" class="hover:text-rose-500 transition">Sfaturi Utile</a>
+                <a href="#contact" class="hover:text-rose-500 transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-rose-50 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">
+                Descoperă Frumusețea prin Știință
+            </h2>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-8">
+                Tot ce trebuie să știi despre procedurile cosmetice moderne: de la pregătirea pielii până la rezultatele finale. Informații pas cu pas pentru o piele radiantă.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#proceduri" class="bg-rose-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-rose-600 transition shadow-lg">
+                    Vezi Procedurile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-16" id="proceduri">
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Procedura 1: Microneedling -->
+            <div class="procedure-card bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                <div class="w-12 h-12 bg-rose-100 text-rose-600 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-microchip text-xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Microneedling (Dermapen)</h3>
+                <p class="text-slate-600 mb-6">Tratament de regenerare care stimulează producția de colagen prin micro-înțepături controlate.</p>
+                
+                <div class="space-y-4">
+                    <div class="flex gap-4">
+                        <span class="step-number text-white w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold">1</span>
+                        <p class="text-sm"><span class="font-semibold text-slate-900">Curățare:</span> Dezinfectarea feței și aplicarea unei creme anestezice.</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="step-number text-white w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold">2</span>
+                        <p class="text-sm"><span class="font-semibold text-slate-900">Procedura:</span> Trecerea dispozitivului cu ace fine pe zonele vizate, alături de un cocktail de vitamine.</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="step-number text-white w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold">3</span>
+                        <p class="text-sm"><span class="font-semibold text-slate-900">Post-tratament:</span> Aplicarea unei măști calmante și protecție SPF obligatorie.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Procedura 2: Peeling Chimic -->
+            <div class="procedure-card bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-flask text-xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Peeling Chimic</h3>
+                <p class="text-slate-600 mb-6">Exfoliere profundă folosind acizi pentru a elimina celulele moarte și a uniformiza tenul.</p>
+                
+                <div class="space-y-4">
+                    <div class="flex gap-4">
+                        <span class="step-number text-white w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold">1</span>
+                        <p class="text-sm"><span class="font-semibold text-slate-900">Evaluare:</span> Alegerea tipului de acid (AHA, BHA, TCA) în funcție de tipul de ten.</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="step-number text-white w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold">2</span>
+                        <p class="text-sm"><span class="font-semibold text-slate-900">Aplicare:</span> Aplicarea soluției pe piele pentru un timp controlat (câteva minute).</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="step-number text-white w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold">3</span>
+                        <p class="text-sm"><span class="font-semibold text-slate-900">Neutralizare:</span> Stoparea acțiunii acidului și hidratarea intensă.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Procedura 3: Hidrafacial -->
+            <div class="procedure-card bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-tint text-xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">HidraFacial</h3>
+                <p class="text-slate-600 mb-6">Tehnologie avansată de curățare, extracție și hidratare non-invazivă.</p>
+                
+                <div class="space-y-4">
+                    <div class="flex gap-4">
+                        <span class="step-number text-white w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold">1</span>
+                        <p class="text-sm"><span class="font-semibold text-slate-900">Vortex-Cleaning:</span> Eliminarea impurităților de la suprafață prin sucțiune.</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="step-number text-white w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold">2</span>
+                        <p class="text-sm"><span class="font-semibold text-slate-900">Extracție:</span> Curățarea porilor în profunzime fără durere sau iritație.</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="step-number text-white w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold">3</span>
+                        <p class="text-sm"><span class="font-semibold text-slate-900">Infuzie:</span> Hidratarea cu seruri bogate în antioxidanți și peptide.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sfaturi Utile Section -->
+        <section class="mt-20 bg-slate-900 text-white p-8 md:p-16 rounded-3xl" id="sfaturi">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-10 text-center">Sfaturi Esențiale Pre & Post Procedură</h2>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h4 class="text-rose-400 font-bold text-xl mb-4 flex items-center gap-2">
+                            <i class="fas fa-exclamation-circle"></i> Înainte de programare
+                        </h4>
+                        <ul class="space-y-3 text-slate-300">
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check text-emerald-500 mt-1"></i>
+                                Evită expunerea directă la soare cu minim 7 zile înainte.
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check text-emerald-500 mt-1"></i>
+                                Întrerupe folosirea retinolului cu 3-5 zile înainte.
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check text-emerald-500 mt-1"></i>
+                                Hidratează-te corespunzător și informează specialistul despre medicația curentă.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-rose-400 font-bold text-xl mb-4 flex items-center gap-2">
+                            <i class="fas fa-heart"></i> Îngrijirea de după
+                        </h4>
+                        <ul class="space-y-3 text-slate-300">
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check text-emerald-500 mt-1"></i>
+                                Folosește SPF 50 zilnic, indiferent de vreme.
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check text-emerald-500 mt-1"></i>
+                                Nu atinge fața excesiv și nu folosi machiaj în primele 24 de ore.
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check text-emerald-500 mt-1"></i>
+                                Evită sauna, efortul fizic intens și băile fierbinți timp de 48 de ore.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter / Contact -->
+        <section class="mt-20 text-center max-w-2xl mx-auto" id="contact">
+            <h2 class="text-2xl font-bold mb-4">Vrei să primești recomandări personalizate?</h2>
+            <p class="text-slate-600 mb-8">Abonează-te la newsletter-ul nostru pentru a primi noutăți despre cele mai noi tratamente și oferte exclusive.</p>
+            <div class="flex gap-2">
+                <input type="email" placeholder="Adresa ta de email" class="flex-1 px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-rose-500 transition">
+                <button class="bg-rose-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-rose-600 transition">Abonează-te</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t py-12 mt-20">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-slate-400 text-sm">
+                &copy; 2024 EstetiGuide. Toate drepturile rezervate. <br>
+                <span class="text-xs italic">Notă: Informațiile de pe această pagină sunt cu scop orientativ. Consultă întotdeauna un specialist acreditat.</span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
